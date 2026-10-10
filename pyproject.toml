@@ -3,7 +3,7 @@ name = "vlex-mcp"
 version = "0.1.0"
 description = "An MCP server for verified vLex legal research and Vincent AI endpoints"
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.14,<3.15"
 license = { text = "MIT" }
 dependencies = [
     "httpx==0.28.1",
