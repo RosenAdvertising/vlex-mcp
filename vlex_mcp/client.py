@@ -1,4 +1,4 @@
-"""Thin asynchronous HTTP client for the verified vLex API surfaces."""
+"""Thin asynchronous HTTP client for the vLex API surfaces."""
 
 from __future__ import annotations
 

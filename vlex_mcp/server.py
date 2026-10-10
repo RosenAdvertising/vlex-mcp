@@ -1,4 +1,4 @@
-"""MCP server exposing method-verified vLex tools over stdio or HTTP."""
+"""MCP server exposing vLex tools over stdio or HTTP."""
 
 from __future__ import annotations
 
