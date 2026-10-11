@@ -106,10 +106,11 @@ async def _post_modern(method: str, params: dict[str, Any] | None = None, **kwar
 
 
 async def test_http_catalog_equals_stdio_server_catalog():
+    repo_root = (await asyncio.to_thread(Path(__file__).resolve)).parents[1]
     parameters = StdioServerParameters(
         command=sys.executable,
         args=["-m", "vlex_mcp.server"],
-        cwd=str(Path(__file__).resolve().parents[1]),
+        cwd=str(repo_root),
         env={"VLEX_MCP_TRANSPORT": "stdio"},
     )
     async with Client(parameters, cache=None) as stdio_server:
@@ -207,7 +208,7 @@ def test_empty_transport_selects_stdio_startup(monkeypatch):
 def test_unknown_transport_exits_with_both_options(monkeypatch):
     monkeypatch.setenv("VLEX_MCP_TRANSPORT", "bogus")
     monkeypatch.setattr(server.mcp, "run", lambda **_kwargs: None)
-    with pytest.raises(SystemExit, match="VLEX_MCP_TRANSPORT.*bogus.*stdio.*streamable-http"):
+    with pytest.raises(SystemExit, match=r"VLEX_MCP_TRANSPORT.*bogus.*stdio.*streamable-http"):
         server.main()
 
 
