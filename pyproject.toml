@@ -3,7 +3,7 @@ name = "vlex-mcp"
 version = "0.1.0"
 description = "MCP server for vLex: legal research and Vincent AI workflows."
 readme = "README.md"
-requires-python = ">=3.12,<3.13"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 classifiers = [
     "Intended Audience :: Legal Industry",
@@ -11,7 +11,10 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Office/Business",
 ]
 dependencies = [

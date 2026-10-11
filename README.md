@@ -1,7 +1,7 @@
 # vLex MCP server
 
 [![CI](https://github.com/RosenAdvertising/vlex-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/RosenAdvertising/vlex-mcp/actions/workflows/ci.yml)
-[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![MCP 2026-07-28](https://img.shields.io/badge/MCP-2026--07--28-7C3AED.svg)](https://modelcontextprotocol.io)
 
@@ -43,7 +43,7 @@ Use `list_research_jurisdictions` and `list_vincent_workflows` instead of guessi
 
 ## Requirements
 
-- Python 3.12
+- Python 3.11+
 - [`uv`](https://docs.astral.sh/uv/)
 - A vLex subscription key for the target developer portal account
 - An MCP client such as Claude Desktop
