@@ -18,7 +18,7 @@ classifiers = [
     "Topic :: Office/Business",
 ]
 dependencies = [
-    "httpx==0.28.1",
+    "httpx==0.29.0",
     "mcp>=2.3,<3",
 ]
 
